@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WORKOUT PLAN</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>WORKOUT PLAN</h1>
+  </header>
+
+  <main>
+    <div class="days-container">
+  <h2></h2>
+  <div class="days-list">
+    <div class="day-card active" data-day="1">
+      <h3>Day 1</h3>
+      <p>Cardio & Full Body Activation</p>
+    </div>
+    <div class="day-card" data-day="2">
+      <h3>Day 2</h3>
+      <p>Arms & Chest</p>
+    </div>
+    <div class="day-card" data-day="3">
+      <h3>Day 3</h3>
+      <p>Legs & Glutes</p>
+    </div>
+    <div class="day-card" data-day="4">
+      <h3>Day 4</h3>
+      <p>Abs & Core</p>
+    </div>
+    <div class="day-card" data-day="5">
+      <h3>Day 5</h3>
+      <p>Back & Posture</p>
+    </div>
+    <div class="day-card" data-day="6">
+      <h3>Day 6</h3>
+      <p>Rest & Flexibility</p>
+    </div>
+    <div class="day-card" data-day="7">
+      <h3>Day 7</h3>
+      <p>Full Body & Relaxation</p>
+    </div>
+  </div>
+</div>
+
+    <section class="day-details" id="dayDetails">
+        <div id="exerciseDetail"></div>
+      <!-- Details will be injected via JS -->
+    </section>
+    <section id="exerciseDetail" class="exercise-detail"></section>
+  </main>
+
+  <div id="detailModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3 id="modalTitle"></h3>
+      <img id="modalImage" src="images/modalImage.jpg" alt="Exercise Image">
+      <p id="modalDesc"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
